@@ -1,0 +1,6 @@
+/* pages/component/pages/input/index.wxss */
+@import '../../../style/page.wxss';
+.top{
+  display: flex;
+  justify-content: space-between;
+}

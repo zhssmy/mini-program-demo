@@ -1,0 +1,17 @@
+/* pages/component/pages/checkbox/index.wxss */
+@import '../../../style/page.wxss';
+
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-box{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+checkbox{
+  margin: 0 10rpx;
+}

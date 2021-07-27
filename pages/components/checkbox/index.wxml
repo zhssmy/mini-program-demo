@@ -1,0 +1,24 @@
+<!--pages/component/pages/checkbox/index.wxml-->
+<import src="../../../common/head.wxml"/>
+
+<view class="page">
+	<template is="head" data="{{title:'CheckBox'}}"/>
+
+  <view class="top">
+		<copy 
+		value="https://developers.weixin.qq.com/miniprogram/dev/component/checkbox.html"
+		tips="链接复制成功">
+	  </copy>
+		<to-web url="https://developers.weixin.qq.com/miniprogram/dev/component/checkbox.html">
+		</to-web>
+	</view>
+
+  <view class="check-box">
+    <checkbox-group bindchange="checkboxChange">
+      <checkbox checked="{{true}}" value="value1"/>选中
+      <checkbox checked="{{true}}" color="#f00" value="value2" />颜色
+      <checkbox value="value3" />未选中
+      <checkbox disabled="{{true}}"/>禁用
+    </checkbox-group>
+  </view>
+</view>

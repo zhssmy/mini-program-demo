@@ -1,0 +1,4 @@
+<view class="copy" bindtap='copyUrl' data-text="{{value}}">
+  <image class="icon" src="../../icon/copy.png"></image>
+ {{title}}
+</view>

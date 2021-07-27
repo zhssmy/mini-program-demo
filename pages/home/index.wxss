@@ -1,0 +1,8 @@
+/* pages/home/index.wxss */
+.page .grid{
+  padding: 20rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-row-gap: 36rpx;
+  justify-items: center;
+}

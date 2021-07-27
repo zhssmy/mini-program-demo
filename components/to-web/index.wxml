@@ -1,0 +1,4 @@
+<view class="to-web" bindtap='toWeb' data-url="{{url}}">
+  <image class="icon" src="../../icon/search.png"></image>
+ {{title}}
+</view>

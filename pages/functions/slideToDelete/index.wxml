@@ -1,0 +1,26 @@
+<!--pages/function/slideToDelete/index.wxml-->
+<!-- index.wxml -->
+<view class="page">
+	<view class="list">
+		<view 
+      class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" 
+      wx:for="{{addressList}}" 
+      wx:key="key" 
+      bindtouchstart="touchStart" 
+      bindtouchmove="touchMove"
+      data-index="{{index}}">
+			<view class="content">
+					<view class="head">
+						{{item.name}}
+					</view>
+					<view class="address">
+						{{item.address}}
+					</view>
+			</view>
+			<view class="del" catchtap="delete">
+				删除
+			</view>
+		</view>
+	</view>
+</view>
+

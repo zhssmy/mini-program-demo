@@ -1,0 +1,33 @@
+/**app.wxss**/
+@import "./common/lib/weui.wxss";
+/* page{
+  background-color: var(--weui-BG);
+  color: var(--weui-FG-0);
+} */
+  
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.page-head{
+  padding: 20px 25px 20px;
+  text-align: center;
+}
+.page-head-title {
+  display: inline-block;
+  padding: 2px 20px;
+  font-size: 16px;
+}
+.page-head-line{
+  margin: 0 auto;
+  width: 75px;
+  height: 2px;
+  border-radius: 16rpx;
+  background-color: var(--weui-FG-1);
+}

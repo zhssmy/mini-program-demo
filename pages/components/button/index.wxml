@@ -1,0 +1,153 @@
+<!-- pages/component/pages/button/index.wxml -->
+<import src="../../../common/head.wxml" />
+
+<view class="page">
+	<template is="head" data="{{title:'Button'}}" />
+
+	<view class="top">
+		<copy value="https://developers.weixin.qq.com/miniprogram/dev/component/button.html" tips="链接复制成功">
+		</copy>
+		<to-web url="https://developers.weixin.qq.com/miniprogram/dev/component/button.html">
+		</to-web>
+	</view>
+
+	<view class="h2">
+		按钮的大小:（size）
+	</view>
+	<view class="content">
+		<button size="mini">
+			小尺寸
+		</button>
+		<button size="default">
+			默认大小
+		</button>
+	</view>
+	<view class="h2">
+		按钮的样式类型:（type、plain、disabled、loading）
+	</view>
+	<view class="content">
+		<button>
+			普通
+		</button>
+		<button type="primary">
+			绿色
+		</button>
+		<button type="default">
+			白色
+		</button>
+		<button type="warn">
+			红色
+		</button>
+		<button plain="{{true}}">
+			镂空
+		</button>
+		<button disabled="{{true}}">
+			禁用
+		</button>
+		<button loading="{{true}}">
+			loading
+		</button>
+	</view>
+	<view class="h2">
+		用于 form 组件:（form-type）
+	</view>
+	<form catchsubmit="formSubmit" catchreset="formReset">
+		<view class="form-block">
+			<view class="form-title">switch</view>
+			<switch name="switch" />
+			<view class="form-title">radio</view>
+			<radio-group name="radio">
+				<label style="margin-right:20rpx">
+					<radio value="radio1" />
+					选项一
+				</label>
+				<label>
+					<radio value="radio2" />
+					选项二
+				</label>
+			</radio-group>
+			<view class="form-title">checkbox</view>
+			<checkbox-group name="checkbox">
+				<label style="margin-right:20rpx">
+					<checkbox value="checkbox1" />
+					选项一
+				</label>
+				<label>
+					<checkbox value="checkbox2" />
+					选项二
+				</label>
+			</checkbox-group>
+			<view class="form-title">slider</view>
+			<slider value="50" name="slider" show-value></slider>
+			<view class="form-title">input</view>
+			<view style="margin: 30rpx 0">
+				<input name="input" placeholder="这是一个输入框" />
+			</view>
+		</view>
+		<view>
+			<button type="primary" formType="submit">
+				提交表单
+			</button>
+			<button formType="reset">
+				重置表单
+			</button>
+		</view>
+	</form>
+	<view class="h2">
+		微信开放能力:（open-type）
+	</view>
+	<view class="content">
+		<button open-type="contact">
+			打开客服会话
+		</button>
+		<button open-type="share">
+			触发用户转发
+		</button>
+		<button open-type="getPhoneNumber">
+			获取用户手机号
+		</button>
+		<button open-type="getUserInfo">
+			获取用户信息
+		</button>
+		<button open-type="launchApp" app-parameter="wechat">
+			打开APP
+		</button>
+		<button open-type="openSetting">
+			打开授权设置页
+		</button>
+		<button open-type="feedback">
+			打开意见反馈页
+		</button>
+	</view>
+	<view class="h2">
+		点击样式:(hover-class）
+	</view>
+	<view class="content">
+		<button hover-class="hover" type="primary">
+			点击态：透明
+		</button>
+		<button hover-start-time="1000">
+			1s后出现点击态
+		</button>
+		<button hover-stay-time="1000" type="primary">
+			点击态持续1s
+		</button>
+		<button hover-class="none">
+			无效果
+		</button>
+	</view>
+	<view class="h2">
+		指定返回用户信息的语言:(lang）
+	</view>
+	<view class="content">
+		<button lang="en">
+			英文
+		</button>
+		<button lang="zh_CN" type="primary">
+			简体中文
+		</button>
+		<button lang="zh_TW">
+			繁体中文
+		</button>
+	</view>
+</view>

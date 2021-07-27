@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/index"
+  ],
+  "subPackages": [
+    {
+      "root":"pages/components",
+      "pages": [
+        "button/index",
+        "checkbox/index",
+        "editor/index",
+        "input/index"
+      ]
+    },
+    {
+      "root": "pages/functions",
+      "pages": [
+        "slideToDelete/index"
+      ]
+    }
+  ],
+  "window":{
+    "backgroundTextStyle":"@bgTxtStyle",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTitleText": "微信小程序开发",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "card":"/components/card/index",
+    "copy":"/components/copy/index",
+    "to-web":"/components/to-web/index"
+  },
+  "darkmode": true,
+  "themeLocation":"theme.json"
+}

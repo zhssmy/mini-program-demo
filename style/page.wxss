@@ -1,0 +1,7 @@
+.page{
+  padding: 40rpx 20rpx;
+}
+
+.hover{
+  opacity: 0.6;
+}

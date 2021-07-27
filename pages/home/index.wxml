@@ -1,0 +1,18 @@
+<!-- pages/home/index.wxml -->
+<view class="page">
+	<view class="grid">
+		<block wx:for="{{itemList}}" wx:key="key">
+			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}">
+			</card>
+		</block>
+	</view>
+
+
+	<view class="grid">
+		<block wx:for="{{functionList}}" wx:key="key">
+			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"
+				bgColor="#ffd500">
+			</card>
+		</block>
+	</view>
+</view>
