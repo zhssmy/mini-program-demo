@@ -20,6 +20,12 @@
         "template/index",
         "slideCeiling/index"
       ]
+    },
+    {
+      "root": "pages/layout",
+      "pages": [
+        "flex/index"
+      ]
     }
   ],
   "window": {

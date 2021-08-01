@@ -7,6 +7,12 @@ component({
    * 页面的初始数据
    */
   data: {
+    layoutList: [{
+      key: 0,
+      name: "flex",
+      path: "layout/flex",
+      type: "layout"
+    }],
     formComponentsList: [{
         key: 0,
         name: "Button",
@@ -127,14 +133,14 @@ component({
         fail: function () {}
       }
     },
-    onTabItemTap(item){
+    onTabItemTap(item) {
       wx.vibrateShort({
         type: 'light',
       })
     }
   },
-  pageLifetimes:{
-    show(){
+  pageLifetimes: {
+    show() {
       console.log('home')
     }
   }

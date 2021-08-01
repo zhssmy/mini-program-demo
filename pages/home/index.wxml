@@ -1,9 +1,20 @@
 <!-- pages/home/index.wxml -->
 <view class="page">
+
+	<view class="title">布局</view>
+	<view class="grid">
+		<block wx:for="{{layoutList}}" wx:key="key">
+			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"
+			bgColor="#33a6b8">
+			</card>
+		</block>
+	</view>
+
 	<view class="title">表单组件</view>
 	<view class="grid">
 		<block wx:for="{{formComponentsList}}" wx:key="key">
-			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}">
+			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"
+			bgColor="#f75c2f">
 			</card>
 		</block>
 	</view>
@@ -12,7 +23,7 @@
 	<view class="grid">
 		<block wx:for="{{functionList}}" wx:key="key">
 			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"
-				bgColor="#ffd500">
+				bgColor="#ffc408">
 			</card>
 		</block>
 	</view>

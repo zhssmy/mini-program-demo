@@ -47,6 +47,12 @@
           "pathName": "pages/functions/collapsePanel/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "flex",
+          "pathName": "pages/layout/flex/index",
+          "query": "",
+          "scene": null
         }
       ]
     }
