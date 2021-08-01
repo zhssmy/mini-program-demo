@@ -19,6 +19,7 @@
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 30rpx;
   margin-bottom: 20rpx;
   padding-bottom: 15rpx;
   border-bottom: 2rpx solid #ccc;
@@ -28,7 +29,7 @@
   align-items: center;
 }
 text{
-  font-size: 24rpx;
+  font-size: 22rpx;
 }
 switch{
   zoom: 0.8;

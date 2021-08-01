@@ -16,3 +16,7 @@
   height: 36rpx;
   margin-right: 8rpx;
 }
+
+.title{
+  font-size: 28rpx;
+}

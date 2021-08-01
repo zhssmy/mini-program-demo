@@ -27,7 +27,7 @@ page{
 .page-head-title {
   display: inline-block;
   padding: 2px 20px;
-  font-size: 16px;
+  font-size: 30rpx;
 }
 .page-head-line{
   margin: 0 auto;

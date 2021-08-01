@@ -10,5 +10,6 @@
 .title{
   margin-top: 20rpx;
   margin-left: 40rpx;
+  font-size: 30rpx;
   font-weight: bold;
 }
