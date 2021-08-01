@@ -1,11 +1,10 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/home/index"
   ],
-  "subPackages": [
-    {
-      "root":"pages/components",
+  "subPackages": [{
+      "root": "pages/components/form-components",
       "pages": [
         "button/index",
         "checkbox/index",
@@ -16,12 +15,15 @@
     {
       "root": "pages/functions",
       "pages": [
-        "slideToDelete/index"
+        "slideToDelete/index",
+        "collapsePanel/index",
+        "template/index",
+        "slideCeiling/index"
       ]
     }
   ],
-  "window":{
-    "backgroundTextStyle":"@bgTxtStyle",
+  "window": {
+    "backgroundTextStyle": "@bgTxtStyle",
     "navigationBarBackgroundColor": "@navBgColor",
     "navigationBarTitleText": "微信小程序开发",
     "navigationBarTextStyle": "@navTxtStyle",
@@ -30,10 +32,33 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "card":"/components/card/index",
-    "copy":"/components/copy/index",
-    "to-web":"/components/to-web/index"
+    "card": "/components/card/index",
+    "copy": "/components/copy/index",
+    "to-web": "/components/to-web/index",
+    "collapsePanel":"/components/collapsePanel/index",
+    "collapsePanel2":"/components/collapsePanel2/index",
+    "mask":"/components/mask/index",
+    "popup":"/components/popup/index",
+    "count-down":"/components/count-down/index"
   },
   "darkmode": true,
-  "themeLocation":"theme.json"
+  "themeLocation": "theme.json",
+  "tabBar": {
+    "backgroundColor": "@tabBgColor",
+    "selectedColor": "@tabSelectedColor",
+    "color": "@tabFontColor",
+    "position": "bottom",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "@iconHome",
+        "selectedIconPath": "@iconHomeSeledted"
+      },{
+        "pagePath": "pages/home/index",
+        "text": "My",
+        "iconPath": "@iconMe",
+        "selectedIconPath": "@iconMeSelected"
+      }
+    ]
+  }
 }

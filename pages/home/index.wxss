@@ -2,7 +2,13 @@
 .page .grid{
   padding: 20rpx;
   display: grid;
-  grid-template-columns: repeat(3, 33.33%);
+  grid-template-columns: repeat(4, 25%);
   grid-row-gap: 36rpx;
   justify-items: center;
+}
+
+.title{
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
 }

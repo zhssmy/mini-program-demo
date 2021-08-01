@@ -9,9 +9,10 @@ Page({
   },
 
   checkboxChange(e) {
-    wx.showToast({
-      title: "内容已输出至控制台",
-    });
+    //手机震动反馈
+    wx.vibrateShort({
+      type: 'light',
+    })
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   }
 

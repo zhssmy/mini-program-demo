@@ -13,10 +13,13 @@ Page({
   },
   // 事件处理函数
   toHome() {
-    console.log('dd')
-    wx.navigateTo({
-      url: '../home/index'
+    //手机震动反馈
+    wx.vibrateShort({
+      type: 'light',
     })
+  },
+  longTap(){
+    wx.vibrateLong({})
   },
   onLoad() {
     if (wx.getUserProfile) {
@@ -55,4 +58,9 @@ Page({
       fail: function () {}
     }
   },
+  onTabItemTap(item){
+    wx.vibrateShort({
+      type: 'light',
+    })
+  }
 })

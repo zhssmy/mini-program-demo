@@ -7,9 +7,13 @@
       "bgColorTop": "#eeeeee",
       "bgColorBottom": "#efefef",
       "tabFontColor": "#000000",
-      "tabSelectedColor": "#3cc51f",
+      "tabSelectedColor": "#ffd500",
       "tabBgColor": "#ffffff",
-      "tabBorderStyle": "black"
+      "tabBorderStyle": "black",
+      "iconHome":"icon/home.png",
+      "iconHomeSeledted":"icon/home_selected.png",
+      "iconMe":"icon/me.png",
+      "iconMeSelected":"icon/me_selected.png"
   },
   "dark": {
       "navBgColor": "#191919",
@@ -19,8 +23,12 @@
       "bgColorTop": "#191919",
       "bgColorBottom": "#1f1f1f",
       "tabFontColor": "#ffffff",
-      "tabSelectedColor": "#51a937",
+      "tabSelectedColor": "#ffd500",
       "tabBgColor": "#191919",
-      "tabBorderStyle": "white"
+      "tabBorderStyle": "white",
+      "iconHome":"icon/home_dark.png",
+      "iconHomeSeledted":"icon/home_selected_dark.png",
+      "iconMe":"icon/me_dark.png",
+      "iconMeSelected":"icon/me_selected_dark.png"
   }
 }

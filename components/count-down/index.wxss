@@ -1,0 +1,27 @@
+.count-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count-down .value {
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  background: var(--yellow);
+  color: black;
+  font-weight: bold;
+  margin: 0 10rpx;
+}
+
+.count-down .text {
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  background: white;
+  color: black;
+}

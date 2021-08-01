@@ -1,0 +1,7 @@
+function timeFormat(time) {
+  return +time < 10 ? '0' + time : time
+}
+
+module.exports = {
+  timeFormat: timeFormat
+}

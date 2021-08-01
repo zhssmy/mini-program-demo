@@ -6,48 +6,32 @@ component({
   data: {
     startX: 0, //开始坐标
     startY: 0,
-    page: 1,
     addressList: [{
-        id: 1,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '1'
       },
       {
-        id: 2,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '2'
       },
       {
-        id: 3,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '3'
       },
       {
-        id: 4,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '4'
       },
       {
-        id: 5,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '5'
       },
       {
-        id: 6,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '6'
       },
       {
-        id: 7,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '7'
       },
       {
-        id: 8,
-        name: "朱聪",
-        address: "湖北省武汉市江夏区光谷七路北大资源山水年华",
+        name: '8'
       }
-    ]
+    ],
+    touchMove: false
   },
   methods: {
     //手指触摸动作开始 记录起点X坐标
@@ -87,6 +71,9 @@ component({
           return
         }
         if (i === index) {
+          that.setData({
+            touchMove: true
+          })
           if (touchMoveX > startX)
             //右滑
             v.isTouchMove = false
@@ -99,6 +86,18 @@ component({
         addressList: that.data.addressList
       })
     },
+    //滑动结束事件
+    touchEnd: function (e) {
+      if (this.data.touchMove) {
+        wx.vibrateShort({
+          type: 'light',
+        })
+        this.setData({
+          touchMove: false
+        })
+      }
+
+    },
     /**
      * 计算滑动角度
      * @param {Object} start 起点坐标
@@ -110,32 +109,24 @@ component({
       //返回角度 /Math.atan()返回数字的反正切值
       return (360 * Math.atan(_Y / _X)) / (2 * Math.PI)
     },
-    delAddress(e) {
-      this.$get('/addressBook/delete', {
-        id: e.target.dataset.id
-      }).then(res => {
-        wx.showToast({
-          title: '地址删除成功',
-          icon: 'success'
-        })
-        this.getAddressList()
-      })
-    },
-    edit(e) {
-      wx.setStorageSync('addressList', this.data.addressList)
-      this.$navigateTo('/pages/UserCenterPackage/address-detail/index?type=edit&id=' + e.target.dataset.id)
-    },
-    add() {
-      wx.setStorageSync('addressList', this.data.addressList)
-      this.$navigateTo('/pages/UserCenterPackage/address-detail/index?type=add')
-    },
     onLoad(options) {
-      if (options.from) {
-        this.setData({
-          pageParam: options.from
-        })
-      }
+
     },
+    delete(e) {
+      let index = e.currentTarget.dataset.index
+      this.data.addressList.splice(index, 1)
+      wx.showToast({
+        title: '正在删除',
+        icon: 'loading',
+        duration: 200
+      })
+      setTimeout(() => {
+        this.setData({
+          addressList: this.data.addressList
+        })
+      }, 500)
+
+    }
   },
   pageLifetimes: {
     show() {

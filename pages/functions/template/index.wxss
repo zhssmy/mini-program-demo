@@ -1,0 +1,45 @@
+.popup-content-demo {
+  height: 400rpx;
+  overflow: auto;
+}
+
+.page{
+  padding: 20rpx;
+}
+
+.page .block{
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: rgba(220, 220, 220, 0.6);
+  border-radius: 16rpx;
+}
+
+.page .block .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.page .block .title .switch{
+  display: flex;
+  align-items: center;
+}
+text{
+  font-size: 24rpx;
+}
+switch{
+  zoom: 0.8;
+}
+
+.page .block .flex-center{
+  display: flex;
+  justify-content: space-between;
+}
+
+button{
+  background: var(--yellow);
+  color: black;
+}

@@ -24,6 +24,10 @@ component({
   methods:{
     copyUrl: function (e) {
       console.log(e)
+      //手机震动反馈
+      wx.vibrateShort({
+        type: 'light',
+      })
       copy(e.currentTarget.dataset.text,this.properties.tips)
     },
   }

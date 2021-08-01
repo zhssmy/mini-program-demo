@@ -1,0 +1,18 @@
+<wxs src="./index.wxs" module="format"></wxs>
+<view class="count-down">
+  <block wx:if="{{styleType===1}}">
+    <view class="value">{{format.timeFormat(dd)}}</view>
+    <view class="text">天</view>
+    <view class="value">{{format.timeFormat(hh)}}</view>
+    <view class="text">时</view>
+    <view class="value">{{format.timeFormat(mm)}}</view>
+    <view class="text">分</view>
+    <view class="value">{{format.timeFormat(ss)}}</view>
+    <view class="text">秒</view>
+  </block>
+  <block wx:if="{{styleType===2}}">
+    <view class="value">{{format.timeFormat(hh)}}</view>:
+    <view class="value">{{format.timeFormat(mm)}}</view>:
+    <view class="value">{{format.timeFormat(ss)}}</view>
+  </block>
+</view>

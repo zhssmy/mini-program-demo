@@ -1,0 +1,14 @@
+<!--pages/component/pages/editor/index.wxml-->
+<!--pages/component/pages/input/index.wxml-->
+<import src="../../../../common/head.wxml" />
+<view class="page">
+  <template is="head" data="{{title:'Editor'}}" />
+
+  <view class="top">
+    <copy value="https://developers.weixin.qq.com/miniprogram/dev/component/editor.html" tips="链接复制成功">
+    </copy>
+    <to-web url="https://developers.weixin.qq.com/miniprogram/dev/component/editor.html">
+    </to-web>
+  </view>
+
+</view>

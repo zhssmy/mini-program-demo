@@ -1,9 +1,14 @@
 /**app.wxss**/
 @import "./common/lib/weui.wxss";
+@import "./style//color.wxss";
 /* page{
   background-color: var(--weui-BG);
   color: var(--weui-FG-0);
 } */
+
+page{
+  position: relative;
+}
   
 .container {
   height: 100%;

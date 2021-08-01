@@ -1,10 +1,5 @@
 /* pages/component/pages/button/index.wxss */
-@import '../../../style/page.wxss';
-
-.top{
-  display: flex;
-  justify-content: space-between;
-}
+@import '../../../../style/page.wxss';
 
 .h2{
   margin: 20rpx 0;

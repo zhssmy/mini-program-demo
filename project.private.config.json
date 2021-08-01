@@ -19,26 +19,32 @@
           "scene": null
         },
         {
-          "name": "pages/component/pages/button/index",
-          "pathName": "pages/component/pages/button/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/component/pages/checkbox/index",
-          "pathName": "pages/component/pages/checkbox/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/functions/slideToDelete/index",
+          "name": "滑动删除",
           "pathName": "pages/functions/slideToDelete/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/index/index",
+          "name": "index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "滑动吸顶",
+          "pathName": "pages/functions/slideCeiling/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "template",
+          "pathName": "pages/functions/template/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "收缩面板",
+          "pathName": "pages/functions/collapsePanel/index",
           "query": "",
           "scene": null
         }

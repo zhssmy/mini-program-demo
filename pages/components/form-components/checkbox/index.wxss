@@ -1,10 +1,5 @@
 /* pages/component/pages/checkbox/index.wxss */
-@import '../../../style/page.wxss';
-
-.top{
-  display: flex;
-  justify-content: space-between;
-}
+@import '../../../../style/page.wxss';
 
 .check-box{
   margin-top: 20rpx;

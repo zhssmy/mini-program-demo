@@ -1,0 +1,21 @@
+<wxs src="./index.wxs" module="computed" />
+<mask wx:if="{{isInject}}" class="{{maskClass}}" catchtouchmove="noMove" bindtap="handleClickMask">
+</mask>
+<view class="popup popup-{{position}} {{classes}} {{computed.genRoundClass(isRound, position)}} {{ customClass }}" style="{{customStyle}};z-index: {{zIndex}};" wx:if="{{isInject}}">
+	<view class="popup-title {{computed.genRoundClass(isRound, position)}}" wx:if="{{title && isShowTitle}}" style="{{titleStyle}}">
+		<text>
+			{{title}}
+		</text>
+	</view>
+	<view class="popup-close" wx:if="{{isShowCloseIcon}}" hover-class="hover" bindtap="onClose">
+		<image class="popup-icon" src="../../icon/close.png">
+		</image>
+	</view>
+	<view class="popup-content {{computed.genRoundClass(isRound, position)}}">
+		<slot>
+		</slot>
+	</view>
+	<view class="popup-footer" hover-class="hover" bindtap="onClose" wx:if="{{footerText && isShowFooter}}" style="{{footerStyle}}">
+		{{footerText}}
+	</view>
+</view>

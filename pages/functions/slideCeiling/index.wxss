@@ -1,0 +1,24 @@
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
+.sticky .head{
+  text-align: center;
+  line-height: 150rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 150rpx;
+  background: var(--yellow);
+  border-radius: 16rpx;
+}
+
+.card{
+  padding: 20rpx;
+  margin: 20rpx;
+  height: 300rpx;
+  border-radius: 16rpx;
+  background: rgba(220, 220, 220, 0.6);
+}

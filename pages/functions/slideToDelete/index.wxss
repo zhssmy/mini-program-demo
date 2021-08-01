@@ -14,14 +14,14 @@ page .list {
   margin-bottom: 16rpx;
   border-radius: 16rpx;
   overflow: hidden;
-  box-shadow: darkgray 2rpx 4rpx 8rpx 2rpx;
+  background: rgba(220, 220, 220, 0.6);
 }
 
 .touch-item .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 212rpx;
   padding-left: 30rpx;
   padding-right: 10rpx;
   -webkit-transition: all 0.4s;
@@ -30,29 +30,13 @@ page .list {
   transform: translateX(148rpx);
   margin-left: -148rpx;
 }
-.touch-item .content .head {
-  font-size: 36rpx;
-  font-weight: bold;
-  line-height: 50rpx;
-}
-.touch-item .content .address {
-  margin-top: 20rpx;
-  max-height: 80rpx;
-  font-size: 28rpx;
-  line-height: 40rpx;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
 .touch-item .del {
   width: 168rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #ff6143;
+  background-color: var(--yellow);
   color: #fff;
   -webkit-transform: translateX(168rpx);
   transform: translateX(168rpx);

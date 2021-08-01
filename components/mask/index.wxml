@@ -1,0 +1,1 @@
+<view class="mask" style="z-index: {{zIndex}}; {{customStyle}}"></view>

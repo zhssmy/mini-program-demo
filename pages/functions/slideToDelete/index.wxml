@@ -1,5 +1,4 @@
 <!--pages/function/slideToDelete/index.wxml-->
-<!-- index.wxml -->
 <view class="page">
 	<view class="list">
 		<view 
@@ -8,16 +7,12 @@
       wx:key="key" 
       bindtouchstart="touchStart" 
       bindtouchmove="touchMove"
+      bindtouchend="touchEnd"
       data-index="{{index}}">
 			<view class="content">
-					<view class="head">
-						{{item.name}}
-					</view>
-					<view class="address">
-						{{item.address}}
-					</view>
+      {{item.name}}
 			</view>
-			<view class="del" catchtap="delete">
+			<view class="del" catchtap="delete" data-index="{{index}}">
 				删除
 			</view>
 		</view>

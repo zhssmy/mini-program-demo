@@ -1,13 +1,14 @@
 <!-- pages/home/index.wxml -->
 <view class="page">
+	<view class="title">表单组件</view>
 	<view class="grid">
-		<block wx:for="{{itemList}}" wx:key="key">
+		<block wx:for="{{formComponentsList}}" wx:key="key">
 			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}">
 			</card>
 		</block>
 	</view>
 
-
+	<view class="title">小功能</view>
 	<view class="grid">
 		<block wx:for="{{functionList}}" wx:key="key">
 			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"

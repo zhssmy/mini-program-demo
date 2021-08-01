@@ -66,6 +66,13 @@ export function toast(...args) {
       duration: args[1]
     }
   }
+  if (args[0] && typeof args[0] === 'string' && args[1] && typeof args[1] === 'number'&& args[2] && typeof args[2] === 'string') {
+    options = {
+      title: args[0],
+      duration: args[1],
+      icon: args[2]
+    }
+  }
   Object.assign(defaultOptions, options)
   return new Promise((resolve, reject) => {
     defaultOptions.success = () => {

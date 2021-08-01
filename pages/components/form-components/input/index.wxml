@@ -1,5 +1,5 @@
 <!--pages/component/pages/input/index.wxml-->
-<import src="../../../common/head.wxml" />
+<import src="../../../../common/head.wxml" />
 <view class="page">
   <template is="head" data="{{title:'Input'}}" />
 

@@ -1,0 +1,11 @@
+<!-- pages/functions/collapsePanel/index.wxml -->
+<view class="page">
+	<view class="collapse-panel">
+		<collapsePanel2>
+		</collapsePanel2>
+	</view>
+	<view class="collapse-panel">
+		<collapsePanel des="自定义组件collapsePanel实现展开收缩面板，点击右上角的按钮实现内容的展开与收缩。这里分别使用了两种方式实现效果。第一种：通过字段isShow的状态决定是否用【-webkit-line-clamp: 2】来修饰需要展开的内容的样式；第二种：通过字段isShow的状态决定display为none还是block">
+		</collapsePanel>
+	</view>
+</view>

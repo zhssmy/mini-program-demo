@@ -1,4 +1,5 @@
 /**index.wxss**/
+@import '../../common/lib/weui.wxss';
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -11,6 +12,8 @@
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
+  /* border: 6rpx solid var(--weui-FG-0); */
+  border: 6rpx solid var(--yellow);
   border-radius: 50%;
 }
 .userinfo-avatar:active{
@@ -18,5 +21,8 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 150px;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-shadow: #ccc 4rpx 2rpx 4rpx;
 }

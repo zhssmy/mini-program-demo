@@ -1,0 +1,7 @@
+/* pages/functions/collapsePanel/index.wxss */
+.page{
+  padding: 20rpx;
+}
+.collapse-panel{
+  margin-top: 20rpx;
+}

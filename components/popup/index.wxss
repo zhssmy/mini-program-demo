@@ -1,0 +1,146 @@
+.popup {
+  background: #fff;
+  position: fixed;
+}
+
+.popup-title {
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 600;
+  padding: 0 96rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+
+}
+
+.popup-content {
+  padding: 20rpx;
+}
+
+.popup-footer {
+  width: 702rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  background-color: #ffd500;
+  line-height: 76rpx;
+  font-size: 28rpx;
+  color: #fff;
+  margin: 24rpx auto;
+  border-radius: 38rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popup-close {
+  width: 96rpx;
+  height: 96rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+  text-align: center;
+  line-height: 96rpx;
+  font-size: 0;
+}
+
+.popup-icon {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+.popup-bottom {
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 1200rpx;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  transform: translateY(100%);
+}
+
+.border-radius-bottom {
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}
+
+.border-radius {
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+
+.before-enter {
+  transform: translateY(100%);
+}
+
+.enter-active {
+  animation: slidein 400ms ease-in-out both;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.before-leave {
+  transform: translateY(0);
+}
+
+.leave-active {
+  animation: slideout 400ms ease-in-out both;
+}
+
+@keyframes slideout {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.mask-before-enter {
+  opacity: 0;
+}
+
+.mask-enter-active {
+  animation: fadein 400ms ease-in-out both;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mask-before-leave {
+  opacity: 1;
+}
+
+.mask-leave-active {
+  animation: fadeout 400ms ease-in-out both;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

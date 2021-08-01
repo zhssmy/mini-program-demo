@@ -1,0 +1,61 @@
+<view class="page">
+
+  <!-- 弹窗 -->
+  <view class="block">
+    <view class="title">弹窗</view>
+    <view class="flex-center">
+      <button size="mini" bind:tap="alert">
+        alert
+      </button>
+      <button size="mini" bind:tap="confirm">
+        confirm
+      </button>
+      <button size="mini" bind:tap="toast">
+        toast
+      </button>
+      <button size="mini" bind:tap="openPopup">
+        popup
+      </button>
+    </view>
+  </view>
+
+  <!-- 倒计时1 -->
+  <view class="block">
+    <view class="title">倒计时1
+      <view class="switch">
+        <switch bindchange="changeSwitch1" color="#ffd500"></switch>
+        <text>开启计时整点震动</text>
+      </view>
+    </view>
+    <count-down deltaTime="{{70000}}" ifVibrate="{{ifVibrate1}}"></count-down>
+  </view>
+
+  <!-- 倒计时2 -->
+  <view class="block">
+    <view class="title">倒计时2
+      <view class="switch">
+        <switch bindchange="changeSwitch2" color="#ffd500"></switch>
+        <text>开启计时整点震动</text>
+      </view>
+    </view>
+    <count-down deltaTime="{{3700000}}" ifVibrate="{{ifVibrate2}}" styleType="{{2}}"></count-down>
+  </view>
+
+  <!-- popup弹窗 -->
+  <popup title="{{popup.title}}" footerText="{{popup.footerText}}" show="{{popup.show}}" bind:close="onClosePop">
+    <view class="popup-content-demo">
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+      <view>内容内容</view>
+    </view>
+  </popup>
+</view>

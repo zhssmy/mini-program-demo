@@ -1,0 +1,42 @@
+.hover{
+  opacity: 0.6;
+}
+
+.collapse-panel{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  background: rgba(220, 220, 220, 0.6);
+  transition: height 1s;
+}
+
+.collapse-panel .head{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.collapse-panel .head .title{
+  height: 50rpx;
+  width: 150rpx;
+  background: rgba(250, 250, 250, 0.9);
+  border-radius: 16rpx;
+}
+.collapse-panel .head .click{
+  height: 50rpx;
+  width: 50rpx;
+  background: var(--yellow);
+  border-radius: 16rpx;
+}
+.collapse-panel .des{
+  margin-top: 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hide{
+  -webkit-line-clamp: 2;
+}
+

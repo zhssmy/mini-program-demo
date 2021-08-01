@@ -18,6 +18,10 @@ component({
   },
   methods:{
     toDetail(){
+      //手机震动反馈
+      wx.vibrateShort({
+        type: 'light',
+      })
       this.triggerEvent('detail')
     }
   }

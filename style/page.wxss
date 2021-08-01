@@ -2,6 +2,11 @@
   padding: 40rpx 20rpx;
 }
 
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+
 .hover{
   opacity: 0.6;
 }

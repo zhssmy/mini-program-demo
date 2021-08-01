@@ -1,0 +1,9 @@
+function genRoundClass(round, position) {
+  return round
+    ? position ? ('border-radius-' + position) : 'border-radius'
+    : ''
+}
+
+module.exports = {
+  genRoundClass: genRoundClass
+}
