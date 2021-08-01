@@ -13,13 +13,13 @@
       <view class="sub-title">row-reverse</view>
     </view>
 
-    <view class="layout-space-around">
-      <view class="flex-direction-column">
+    <view class="layout-space-around flex-direction">
+      <view class="flex-direction flex-direction-column">
         <block wx:for="{{3}}">
           <view class="item"></view>
         </block>
       </view>
-      <view class="flex-direction-row">
+      <view class="flex-direction flex-direction-row">
         <block wx:for="{{3}}">
           <view class="item"></view>
         </block>
@@ -30,21 +30,21 @@
   <view class="block">
     <view class="title">flex-wrap:项目是否换行</view>
     <view class="sub-title">nowrap</view>
-    <view class="flex-wrap-nowrap">
+    <view class="flex-wrap flex-wrap-nowrap">
       <block wx:for="{{8}}">
         <view class="item"></view>
       </block>
     </view>
 
     <view class="sub-title">wrap</view>
-    <view class="flex-wrap-wrap">
+    <view class="flex-wrap flex-wrap-wrap">
       <block wx:for="{{8}}">
         <view class="item"></view>
       </block>
     </view>
 
     <view class="sub-title">wrap-reverse</view>
-    <view class="flex-wrap-wrap-reverse">
+    <view class="flex-wrap flex-wrap-wrap-reverse">
       <block wx:for="{{8}}">
         <view class="item"></view>
       </block>
@@ -54,37 +54,37 @@
   <view class="block">
     <view class="title">justify-content:项目在主轴上的对齐方式</view>
     <view class="sub-title">flex-start</view>
-    <view class="justify-content-start">
+    <view class="justify-content justify-content-start">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
     </view>
     <view class="sub-title">center</view>
-    <view class="justify-content-center">
+    <view class="justify-content justify-content-center">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
     </view>
     <view class="sub-title">flex-end</view>
-    <view class="justify-content-end">
+    <view class="justify-content justify-content-end">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
     </view>
     <view class="sub-title">space-around</view>
-    <view class="justify-content-around">
+    <view class="justify-content justify-content-around">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
     </view>
     <view class="sub-title">space-between</view>
-    <view class="justify-content-between">
+    <view class="justify-content justify-content-between">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
     </view>
     <view class="sub-title">space-evenly</view>
-    <view class="justify-content-evenly">
+    <view class="justify-content justify-content-evenly">
       <block wx:for="{{3}}">
         <view class="item"></view>
       </block>
@@ -94,34 +94,34 @@
   <view class="block">
     <view class="title">align-items:项目在交叉轴上对齐方式</view>
     <view class="sub-title">flex-start</view>
-    <view class="align-items-start">
+    <view class="align-items align-items-start">
       <block wx:for="{{5}}">
         <view class="item" style="height:{{100+item*16}}rpx;line-height:{{100+item*16}}rpx"></view>
       </block>
     </view>
     <view class="sub-title">flex-end</view>
-    <view class="align-items-end">
+    <view class="align-items align-items-end">
       <block wx:for="{{5}}">
         <view class="item" style="height:{{100+item*16}}rpx;line-height:{{100+item*16}}rpx"></view>
       </block>
     </view>
 
     <view class="sub-title">center</view>
-    <view class="align-items-center">
+    <view class="align-items align-items-center">
       <block wx:for="{{5}}">
         <view class="item" style="height:{{100+item*16}}rpx;line-height:{{100+item*16}}rpx"></view>
       </block>
     </view>
 
     <view class="sub-title">baseline</view>
-    <view class="align-items-baseline">
+    <view class="align-items align-items-baseline">
       <block wx:for="{{5}}">
         <view class="item" style="height:{{100+item*16}}rpx;padding-top:{{item*6}}rpx">{{item}}</view>
       </block>
     </view>
 
     <view class="sub-title">stretch</view>
-    <view class="align-items-stretch" style="height:200rpx">
+    <view class="align-items align-items-stretch" style="height:200rpx">
       <block wx:for="{{5}}">
         <view class="item" style="height:auto"></view>
       </block>
