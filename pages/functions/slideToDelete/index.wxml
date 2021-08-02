@@ -1,5 +1,6 @@
 <!--pages/function/slideToDelete/index.wxml-->
 <view class="page">
+	<view class="title">自定义</view>
 	<view class="list">
 		<view 
       class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" 
@@ -17,5 +18,23 @@
 			</view>
 		</view>
 	</view>
+
+	<view class="title">Slideview</view>
+    <view class="page__bd">
+      <view class="weui-cells">
+          <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap">
+              <mp-cell value="左滑可以删除" footer="说明文字"></mp-cell>
+          </mp-slideview>
+      </view>
+
+      <view class="weui-slidecells">
+        <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+          <view class="weui-slidecell">
+            左滑可以删除（图标Button）
+          </view>
+        </mp-slideview>
+      </view>
+    </view>
+
 </view>
 

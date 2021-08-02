@@ -8,13 +8,19 @@ page .list {
   overflow: auto;
 }
 
+.page .title{
+    margin: 20rpx 40rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
 .touch-item {
   display: flex;
   min-height: 212rpx;
   margin-bottom: 16rpx;
   border-radius: 16rpx;
   overflow: hidden;
-  background: rgba(220, 220, 220, 0.6);
+  background-color: var(--weui-BG-2);
 }
 
 .touch-item .content {
@@ -50,5 +56,17 @@ page .list {
 .touch-move-active .del {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+.weui-slidecells {
+  margin:8px;
+}
+
+.weui-slidecell {
+  background-color: var(--weui-BG-2);
+  border-radius: 16rpx;
+  padding: 52rpx;
+  line-height: 1.4;
+  font-size: 34rpx;
 }
 

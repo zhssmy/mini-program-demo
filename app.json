@@ -47,6 +47,9 @@
     "popup":"/components/popup/index",
     "count-down":"/components/count-down/index"
   },
+  "useExtendedLib": {
+    "weui": true
+  },
   "darkmode": true,
   "themeLocation": "theme.json",
   "tabBar": {

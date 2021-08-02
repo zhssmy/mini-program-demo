@@ -1,4 +1,7 @@
 import {
+  toast
+} from '../../../utils/modal.js'
+import {
   component
 } from '../../../utils/wx.js'
 
@@ -6,29 +9,12 @@ component({
   data: {
     startX: 0, //开始坐标
     startY: 0,
-    addressList: [{
+    addressList: [
+      {
         name: '1'
       },
       {
         name: '2'
-      },
-      {
-        name: '3'
-      },
-      {
-        name: '4'
-      },
-      {
-        name: '5'
-      },
-      {
-        name: '6'
-      },
-      {
-        name: '7'
-      },
-      {
-        name: '8'
       }
     ],
     touchMove: false
@@ -126,11 +112,29 @@ component({
         })
       }, 500)
 
+    },
+
+    slideButtonTap(e) {
+      toast(e.detail.index + '')
     }
   },
   pageLifetimes: {
     show() {
-
+      this.setData({
+        slideButtons: [{
+          text: '点赞',
+          src: '/pages/functions/slideToDelete/icon_love.svg',
+        }, {
+          text: '收藏',
+          extClass: 'test',
+          src: '/pages/functions/slideToDelete/icon_star.svg',
+        }, {
+          type: 'warn',
+          text: '删除',
+          extClass: 'test',
+          src: '/pages/functions/slideToDelete/icon_del.svg',
+        }],
+      });
     }
   },
   lifetimes: {
