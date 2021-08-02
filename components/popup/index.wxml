@@ -13,7 +13,7 @@
 		<slot>
 		</slot>
 	</view>
-	<view class="popup-footer" hover-class="hover" bindtap="onClose" wx:if="{{footerText && isShowFooter}}" style="{{footerStyle}}">
+	<view class="popup-footer" hover-class="hover" bindtap="onClose" wx:if="{{footerText && isShowFooter && position!=='top'}}" style="{{footerStyle}}">
 		{{footerText}}
 	</view>
 </view>

@@ -2,6 +2,9 @@
   height: 400rpx;
   overflow: auto;
 }
+.notification-content-demo{
+  text-align: center;
+}
 
 .page{
   padding: 20rpx;

@@ -15,23 +15,42 @@ component({
       title: '标题',
       footerText: '我知道了'
     },
+    notification: {
+      show: false,
+      title: '标题',
+      footerText: '我知道了'
+    },
     time: {},
     ifVibrate1: false,
     ifVibrate2: false,
   },
 
   methods: {
-    openPopup() {
+    openPopup(e) {
       this.vibrateShort()
-      this.setData({
-        'popup.show': true
-      })
+      let position = e.currentTarget.dataset.position
+      if(position === 'bottom'){
+        this.setData({
+          'popup.show': true
+        })
+      }else if(position === 'top'){
+        this.setData({
+          'notification.show': true
+        })
+      }
     },
 
-    onClosePop() {
-      this.setData({
-        'popup.show': false
-      })
+    onClosePop(e) {
+      let position = e.currentTarget.dataset.position
+      if(position === 'bottom'){
+        this.setData({
+          'popup.show': false
+        })
+      }else if(position === 'top'){
+        this.setData({
+          'notification.show': false
+        })
+      }
     },
 
     alert() {

@@ -5,16 +5,19 @@
     <view class="title">弹窗</view>
     <view class="flex-center">
       <button size="mini" bind:tap="alert">
-        alert
+        警告
       </button>
       <button size="mini" bind:tap="confirm">
-        confirm
+        确认
       </button>
       <button size="mini" bind:tap="toast">
-        toast
+        吐司
       </button>
-      <button size="mini" bind:tap="openPopup">
-        popup
+      <button size="mini" bind:tap="openPopup" data-position="bottom">
+        弹窗
+      </button>
+      <button size="mini" bind:tap="openPopup" data-position="top">
+        通知
       </button>
     </view>
   </view>
@@ -42,7 +45,7 @@
   </view>
 
   <!-- popup弹窗 -->
-  <popup title="{{popup.title}}" footerText="{{popup.footerText}}" show="{{popup.show}}" bind:close="onClosePop">
+  <popup title="{{popup.title}}" footerText="{{popup.footerText}}" show="{{popup.show}}" bind:close="onClosePop" data-position="bottom">
     <view class="popup-content-demo">
       <view>内容内容</view>
       <view>内容内容</view>
@@ -56,6 +59,12 @@
       <view>内容内容</view>
       <view>内容内容</view>
       <view>内容内容</view>
+    </view>
+  </popup>
+
+  <popup title="{{notification.title}}" footerText="{{notification.footerText}}" show="{{notification.show}}" position="top" bind:close="onClosePop" data-position="top">
+    <view class="notification-content-demo">
+      <view>通知内容</view>
     </view>
   </popup>
 </view>

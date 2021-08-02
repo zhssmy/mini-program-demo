@@ -84,14 +84,14 @@ component({
     enter() {
       this.setData({
         isInject: true,
-        classes: 'before-enter enter-active',
+        classes: `before-enter-${this.properties.position} enter-active-${this.properties.position}`,
         maskClass: 'mask-before-enter mask-enter-active'
       })
     },
 
     leave() {
       this.setData({
-        classes: 'before-leave leave-active',
+        classes: `before-leave-${this.properties.position} leave-active-${this.properties.position}`,
         maskClass: 'mask-before-leave mask-leave-active'
       })
       setTimeout(() => {

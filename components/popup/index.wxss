@@ -68,16 +68,30 @@
   border-top-right-radius: 40rpx;
 }
 
+.popup-top {
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-height: 1200rpx;
+  transform: translateY(-100%);
+}
+
+.border-radius-top {
+  border-bottom-left-radius: 16rpx;
+  border-bottom-right-radius: 16rpx;
+}
+
 .border-radius {
   border-top-left-radius: 16rpx;
   border-top-right-radius: 16rpx;
 }
 
-.before-enter {
+.before-enter-bottom {
   transform: translateY(100%);
 }
 
-.enter-active {
+.enter-active-bottom {
   animation: slidein 400ms ease-in-out both;
 }
 
@@ -91,11 +105,11 @@
   }
 }
 
-.before-leave {
+.before-leave-bottom {
   transform: translateY(0);
 }
 
-.leave-active {
+.leave-active-bottom {
   animation: slideout 400ms ease-in-out both;
 }
 
@@ -142,5 +156,42 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+
+.before-enter-top {
+  transform: translateY(-100%);
+}
+
+.enter-active-top {
+  animation: slidein-top 400ms ease-in-out both;
+}
+
+@keyframes slidein-top {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.before-leave-top {
+  transform: translateY(0);
+}
+
+.leave-active-top {
+  animation: slideout-top 400ms ease-in-out both;
+}
+
+@keyframes slideout-top {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
   }
 }
