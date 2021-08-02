@@ -13,7 +13,7 @@
 .page .block{
   padding: 20rpx;
   margin-bottom: 20rpx;
-  background: rgba(220, 220, 220, 0.6);
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
 }
 
@@ -25,7 +25,7 @@
   font-size: 30rpx;
   margin-bottom: 20rpx;
   padding-bottom: 15rpx;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 2rpx solid var(--weui-BG-0);
 }
 .page .block .title .switch{
   display: flex;
@@ -45,5 +45,4 @@ switch{
 
 button{
   background: var(--yellow);
-  color: black;
 }

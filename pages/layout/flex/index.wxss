@@ -6,7 +6,7 @@
 .page .block {
   padding: 20rpx;
   margin-bottom: 20rpx;
-  background: rgba(220, 220, 220, 0.6);
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
 }
 
@@ -18,7 +18,7 @@
   font-size: 30rpx;
   margin-bottom: 20rpx;
   padding-bottom: 20rpx;
-  border-bottom: 2rpx solid #ccc;
+  border-bottom: 2rpx solid var(--weui-BG-0);
 }
 
 .sub-title {
@@ -28,7 +28,7 @@
   font-weight: bold;
   font-size: 26rpx;
   border-radius: 16rpx;
-  background: rgba(250, 250, 250, 0.9);
+  background: var(--weui-BG-0);
 }
 
 .item {
@@ -60,7 +60,7 @@
 
 .flex-direction{
   display: flex;
-  background: white;
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
   margin: 20rpx 0;
   border: 4rpx var(--yellow) dashed;
@@ -76,7 +76,7 @@
 
 .flex-wrap{
   display: flex;
-  background: white;
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
   margin: 20rpx 0;
   border: 4rpx var(--yellow) dashed;
@@ -96,7 +96,7 @@
 
 .justify-content{
   display: flex;
-  background: white;
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
   margin: 20rpx 0;
   border: 4rpx var(--yellow) dashed;
@@ -128,7 +128,7 @@
 
 .align-items{
   display: flex;
-  background: white;
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
   margin: 20rpx 0;
   border: 4rpx var(--yellow) dashed;
@@ -158,7 +158,7 @@
   height: 450rpx;
   display: flex;
   flex-wrap: wrap;
-  background: white;
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
   margin: 20rpx 0;
   border: 4rpx var(--yellow) dashed;

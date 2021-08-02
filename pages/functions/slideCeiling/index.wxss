@@ -20,5 +20,5 @@
   margin: 20rpx;
   height: 300rpx;
   border-radius: 16rpx;
-  background: rgba(220, 220, 220, 0.6);
+  background-color: var(--weui-BG-2);
 }

@@ -1,3 +1,10 @@
+[data-weui-theme=light],
 page {
   --yellow: #ffd500;
+}
+
+@media(prefers-color-scheme: dark){
+page {
+  --yellow: rgba(241, 206, 63, 0.884);
+}
 }

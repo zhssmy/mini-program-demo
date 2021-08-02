@@ -1,5 +1,5 @@
 <view>
-	<block wx:for="{{3}}" wx:key="key">
+	<block wx:for="{{2}}" wx:key="key">
 		<view class="card">
 		</view>
 	</block>
@@ -13,7 +13,7 @@
 	<view class="sticky">
 		<view class="head"> 2 </view>
 	</view>
-	<block wx:for="{{5}}" wx:key="key">
+	<block wx:for="{{3}}" wx:key="key">
 		<view class="card">
 		</view>
 	</block>
@@ -22,7 +22,7 @@
 			3
 		</view>
 	</view>
-	<block wx:for="{{10}}" wx:key="key">
+	<block wx:for="{{5}}" wx:key="key">
 		<view class="card">
 		</view>
 	</block>

@@ -6,15 +6,15 @@
   padding: 20rpx;
   font-weight: bold;
   font-size: 28rpx;
-  color: #fff;
-  background: rgba(92, 92, 92, 0.616);
+  background-color: var(--weui-BG-2);
   border-radius: 16rpx;
 }
 
 input{
   margin: 0 30rpx;
+  height: 80rpx;
   border-radius: 16rpx;
-  border: 2rpx #ccc solid;
+  border: 2rpx var(--weui-BG-0) solid;
 }
 
 .content{
@@ -28,7 +28,7 @@ button{
 }
 
 .form-block{
-  border: 2rpx #ccc solid;
+  border: 2rpx var(--weui-BG-0) solid;
   border-radius: 16rpx;
   text-align: center;
   margin-top: 10rpx;

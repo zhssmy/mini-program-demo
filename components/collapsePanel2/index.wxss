@@ -9,7 +9,7 @@
   flex-direction: column;
   padding: 20rpx;
   border-radius: 16rpx;
-  background: rgba(220, 220, 220, 0.6);
+  background-color: var(--weui-BG-2);
 }
 
 .collapse-panel .head{
@@ -20,7 +20,7 @@
 .collapse-panel .head .title{
   height: 50rpx;
   width: 150rpx;
-  background: rgba(250, 250, 250, 0.9);
+  background-color: var(--weui-BG-0);
   border-radius: 16rpx;
 }
 .collapse-panel .head .click{
@@ -33,7 +33,7 @@
   margin-top: 20rpx;
   transition: height 400ms ease-in-out;
   border-radius: 16rpx;
-  background: rgba(250, 250, 250, 0.9);
+  background-color: var(--weui-BG-0);
 }
 
 .hide{
