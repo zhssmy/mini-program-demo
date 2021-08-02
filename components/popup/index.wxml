@@ -3,9 +3,7 @@
 </mask>
 <view class="popup popup-{{position}} {{classes}} {{computed.genRoundClass(isRound, position)}} {{ customClass }}" style="{{customStyle}};z-index: {{zIndex}};" wx:if="{{isInject}}">
 	<view class="popup-title {{computed.genRoundClass(isRound, position)}}" wx:if="{{title && isShowTitle}}" style="{{titleStyle}}">
-		<text>
-			{{title}}
-		</text>
+		<text>{{title}}</text>
 	</view>
 	<view class="popup-close" wx:if="{{isShowCloseIcon}}" hover-class="hover" bindtap="onClose">
 		<image class="popup-icon" src="../../icon/close.png">
