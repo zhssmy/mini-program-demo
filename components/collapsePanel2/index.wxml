@@ -1,9 +1,9 @@
 <!--components/card/index.wxml-->
-<view class="collapse-panel">
+<view class="collapse-panel" style="height:{{isShow?'350rpx':'50rpx'}}">
   <view class="head">
     <view class="title"></view>
     <view hover-class="hover" bindtap="click" class="click"></view>
   </view>
   <view 
-    class="des" style="display:{{isShow?'block':'none'}}"></view>
+    class="des" style="height:{{isShow?'300rpx':'0'}}"></view>
 </view>
