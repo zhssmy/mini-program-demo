@@ -1,0 +1,14 @@
+@import '../../../../style/page.wxss';
+
+.h2{
+  margin: 20rpx 0;
+  padding: 20rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+  background-color: var(--weui-BG-2);
+  border-radius: 16rpx;
+}
+
+.picker{
+  padding: 20rpx;
+}

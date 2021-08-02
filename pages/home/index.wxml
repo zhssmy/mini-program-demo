@@ -10,7 +10,7 @@
 		</block>
 	</view>
 
-	<view class="title">表单组件</view>
+	<view class="title">基础组件</view>
 	<view class="grid">
 		<block wx:for="{{formComponentsList}}" wx:key="key">
 			<card name="{{item.name}}" bind:detail="toDetail" data-path="{{item.path}}" data-type="{{item.type}}"

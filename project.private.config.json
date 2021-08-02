@@ -53,6 +53,12 @@
           "pathName": "pages/layout/flex/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "picker",
+          "pathName": "pages/components/form-components/picker/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

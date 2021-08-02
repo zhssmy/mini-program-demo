@@ -36,6 +36,12 @@ component({
         name: "Input",
         path: "components/form-components/input",
         type: "form-components"
+      },
+      {
+        key: 4,
+        name: "Picker",
+        path: "components/form-components/picker",
+        type: "form-components"
       }
     ],
     functionList: [{

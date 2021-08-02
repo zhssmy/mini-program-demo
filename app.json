@@ -9,7 +9,8 @@
         "button/index",
         "checkbox/index",
         "editor/index",
-        "input/index"
+        "input/index",
+        "picker/index"
       ]
     },
     {
